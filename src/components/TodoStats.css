@@ -1,0 +1,52 @@
+.todo-stats {
+  padding: 20px 30px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafbfc;
+}
+
+.stats-info {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-item {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.stat-item strong {
+  color: #374151;
+  font-weight: 600;
+}
+
+.clear-completed-button {
+  padding: 8px 16px;
+  background: #f3f4f6;
+  color: #6b7280;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.clear-completed-button:hover {
+  background: #e5e7eb;
+  color: #374151;
+  border-color: #d1d5db;
+}
+
+@media (max-width: 480px) {
+  .todo-stats {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .stats-info {
+    gap: 15px;
+  }
+}
