@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './TodoForm.css';
 
-function TodoForm({ onAdd }) {
+function TodoForm({ onAdd, disabled }) {
   const [text, setText] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (text.trim()) {
+    if (text.trim() && !disabled) {
       onAdd(text);
       setText('');
     }
@@ -26,13 +26,19 @@ function TodoForm({ onAdd }) {
           value={text}
           onChange={(e) => setText(e.target.value)}
           onKeyPress={handleKeyPress}
-          placeholder="What needs to be done?"
+          placeholder={disabled ? "Maximum 3 priorities reached" : "Add a priority..."}
           className="todo-input"
+          disabled={disabled}
         />
-        <button type="submit" className="add-button" disabled={!text.trim()}>
-          Add
+        <button type="submit" className="add-button" disabled={!text.trim() || disabled}>
+          +
         </button>
       </div>
+      {disabled && (
+        <div className="limit-message">
+          <span>Maximum 3 priorities reached</span>
+        </div>
+      )}
     </form>
   );
 }

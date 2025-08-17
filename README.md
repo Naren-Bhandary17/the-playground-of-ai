@@ -22,7 +22,7 @@ Utility scripts, CLI tools, and development helpers for AI projects.
 
 ## 🚀 React Todo Application
 
-A modern, production-ready React todo application is now available in the root directory!
+A modern, production-ready React todo application with **minimalist, high-quality design** is now available in the root directory!
 
 ### ✨ Features
 
@@ -30,9 +30,17 @@ A modern, production-ready React todo application is now available in the root d
 - **Full CRUD Operations** - Add, edit, delete, and mark todos as complete
 - **Clean Component Architecture** - Separated into logical, reusable components
 - **Local Storage Persistence** - Todos are automatically saved and restored
-- **Modern UI/UX** - Beautiful gradient design with smooth animations
+- **Minimalist UI/UX** - Clean, Apple-inspired design with subtle interactions
 - **Responsive Design** - Works perfectly on desktop and mobile devices
 - **Professional Structure** - Production-ready code organization
+
+### 🎨 Design Philosophy
+
+The app follows modern minimalist design principles inspired by:
+- **Apple's clean aesthetic** - Simple, elegant, and functional
+- **Linear's interface** - Smooth interactions and subtle animations
+- **Notion's simplicity** - Focus on content and usability
+- **Modern SaaS standards** - Professional and trustworthy appearance
 
 ### 🛠️ Tech Stack
 
@@ -84,11 +92,13 @@ src/
 
 ### 🎨 Design Features
 
-- Beautiful gradient header with modern typography
-- Smooth hover animations and transitions
-- Responsive design that works on all devices
-- Clean, minimalist interface following modern UX principles
-- Subtle shadows and borders for depth
+- **Minimalist aesthetic** with plenty of whitespace
+- **Clean typography** using system fonts for optimal readability
+- **Subtle color palette** with whites, grays, and blue accent
+- **Smooth micro-interactions** with cubic-bezier easing
+- **Professional spacing** following 8px grid system
+- **Modern form elements** with subtle shadows and focus states
+- **Clean hover states** that enhance usability without clutter
 
 ### 🔧 Available Scripts
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import './TodoStats.css';
 
-function TodoStats({ total, completed, onClearCompleted }) {
+function TodoStats({ total, completed, subTasks, onClearCompleted }) {
   const remaining = total - completed;
   const hasCompleted = completed > 0;
 
@@ -13,10 +13,10 @@ function TodoStats({ total, completed, onClearCompleted }) {
     <div className="todo-stats">
       <div className="stats-info">
         <span className="stat-item">
-          <strong>{total}</strong> total
+          <strong>{total}</strong> priorities
         </span>
         <span className="stat-item">
-          <strong>{remaining}</strong> remaining
+          <strong>{subTasks}</strong> sub-tasks
         </span>
         <span className="stat-item">
           <strong>{completed}</strong> completed

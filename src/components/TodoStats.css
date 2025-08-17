@@ -1,10 +1,10 @@
 .todo-stats {
-  padding: 20px 30px;
-  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 40px;
+  border-bottom: 1px solid #262626;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fafbfc;
+  background: #171717;
 }
 
 .stats-info {
@@ -13,40 +13,47 @@
 }
 
 .stat-item {
-  font-size: 0.9rem;
-  color: #6b7280;
+  font-size: 13px;
+  color: #a3a3a3;
+  font-weight: 400;
 }
 
 .stat-item strong {
-  color: #374151;
+  color: #ffffff;
   font-weight: 600;
+  margin-right: 4px;
 }
 
 .clear-completed-button {
-  padding: 8px 16px;
-  background: #f3f4f6;
-  color: #6b7280;
-  border-radius: 8px;
-  font-size: 0.9rem;
+  padding: 6px 12px;
+  background: transparent;
+  color: #a3a3a3;
+  border-radius: 6px;
+  font-size: 12px;
   font-weight: 500;
-  transition: all 0.2s ease;
-  border: 1px solid #e5e7eb;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #404040;
 }
 
 .clear-completed-button:hover {
-  background: #e5e7eb;
-  color: #374151;
-  border-color: #d1d5db;
+  background: #262626;
+  color: #d4d4d4;
+  border-color: #525252;
 }
 
-@media (max-width: 480px) {
+.clear-completed-button:active {
+  background: #404040;
+}
+
+@media (max-width: 640px) {
   .todo-stats {
+    padding: 16px 24px;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
     align-items: flex-start;
   }
   
   .stats-info {
-    gap: 15px;
+    gap: 16px;
   }
 }
